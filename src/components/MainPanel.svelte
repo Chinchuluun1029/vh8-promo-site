@@ -4,7 +4,7 @@
 
 <Panel>
     <div class="logo-container">
-            <img src="../assets/logo.png" alt="vandyhacks-space-logo">
+            <img src="../assets/logo.png" width="160" height="160" alt="vandyhacks-space-logo">
     </div>
     <div class="subtitle">
         <span class="subtitle-text">
@@ -34,9 +34,9 @@
         z-index: 1;
     }
 
-    .logo-container img {
+    /* .logo-container img {
         width: 80%;
-    }
+    } */
 
     .subtitle {
         min-width: 15vw;

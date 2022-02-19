@@ -89,6 +89,7 @@
         id="github-container"
         href="https://github.com/VandyHacks"
         target="_blank"
+        rel="noreferrer"
         alt="github icon"
     >
         <svg id="github" viewBox="0 0 24 24">
