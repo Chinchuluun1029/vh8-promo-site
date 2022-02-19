@@ -1,6 +1,4 @@
 <script>
-    import Logo from "../assets/vhlogo.svelte";
-
     import Panel from "./Panel.svelte";
 </script>
 

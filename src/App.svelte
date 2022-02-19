@@ -163,7 +163,7 @@
 
 <style>
 	#main {
-		background-image: url("../assets/background.png");
+		background-image: url("../assets/background.webp");
 		background-size: 100%;
 		background-position: center; /* Center the image */
 		background-repeat: no-repeat; /* Do not repeat the image */
