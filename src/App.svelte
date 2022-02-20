@@ -148,6 +148,7 @@
 		src="https://s3.amazonaws.com/logged-assets/trust-badge/2021/mlh-trust-badge-2021-gray.svg"
 		alt="Major League Hacking 2021 Hackathon Season"
 		style="width:100%"
+		rel="preconnect"
 	/></a>
 	<Router {url}>
 		<Route path="sponsors" component={Sponsors} />
