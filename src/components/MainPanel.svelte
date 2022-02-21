@@ -1,6 +1,4 @@
 <script>
-    import Logo from "../assets/vhlogo.svelte";
-
     import Panel from "./Panel.svelte";
 </script>
 
@@ -35,9 +33,9 @@
         z-index: 1;
     }
 
-    .logo-container img {
+    /* .logo-container img {
         width: 80%;
-    }
+    } */
 
     .subtitle {
         min-width: 15vw;
