@@ -4,7 +4,7 @@
 
 <Panel>
     <div class="logo-container">
-            <img src="../assets/logo.png" width="160" height="160" alt="vandyhacks-space-logo">
+        <img src="../assets/logo.png">
     </div>
     <div class="subtitle">
         <span class="subtitle-text">
@@ -14,7 +14,7 @@
             Launching October 8-10.
         </span>
     </div>
-    <a id="apply" href="https://apply.vandyhacks.org" target="_blank" rel="noopener">Apply</a>
+    <a id="apply" href="http://apply.vandyhacks.org" target="_blank">Apply</a>
 </Panel>
 
 <style>
@@ -25,7 +25,6 @@
         background-repeat: no-repeat;
         background-position: center;
         width: 200px;
-        height: 200px;
         display: flex;
         justify-content: center;
         align-items: center;
