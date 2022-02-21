@@ -143,9 +143,11 @@
 	  style="display:block;max-width:80px;min-width:40px;position:fixed;right:50px;top:0;width:10%;z-index:10000"
 	  href="http://mlh.io/seasons/2021/events?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2021-season&utm_content=gray"
 	  target="_blank"
+	  rel="noreferrer"
 	  ><img
 		src="http://s3.amazonaws.com/logged-assets/trust-badge/2021/mlh-trust-badge-2021-gray.svg"
 		style="width:100%"
+		rel="preconnect"
 	/></a>
 	<Router {url}>
 		<Route path="sponsors" component={Sponsors} />
@@ -162,7 +164,7 @@
 
 <style>
 	#main {
-		background-image: url("../assets/background.png");
+		background-image: url("../assets/background.webp");
 		background-size: 100%;
 		background-position: center; /* Center the image */
 		background-repeat: no-repeat; /* Do not repeat the image */

@@ -1,4 +1,6 @@
 import svelte from 'rollup-plugin-svelte';
+import {uglify} from 'rollup-plugin-uglify';
+import adapter from '@sveltejs/adapter-static';
 import commonjs from '@rollup/plugin-commonjs';
 import resolve from '@rollup/plugin-node-resolve';
 import livereload from 'rollup-plugin-livereload';
@@ -34,13 +36,17 @@ export default {
 		sourcemap: true,
 		format: 'iife',
 		name: 'app',
-		file: 'public/build/bundle.js'
+		file: 'public/build/bundle.min.js',
+		plugins: [
+		  svelte(),
+		  uglify()
+		]
 	},
 	plugins: [
 		svelte({
 			compilerOptions: {
 				// enable run-time checks when not in production
-				dev: !production
+				dev: production
 			}
 		}),
 		// we'll extract any component CSS out into
@@ -64,7 +70,7 @@ export default {
 
 		// Watch the `public` directory and refresh the
 		// browser on changes when not in production
-		!production && livereload('public'),
+		// !production && livereload('public'),
 
 		// If we're building for production (npm run build
 		// instead of npm run dev), minify
@@ -72,5 +78,13 @@ export default {
 	],
 	watch: {
 		clearScreen: false
+	},
+	kit: {
+		adapter: adapter({
+			pages: 'build',
+			assets: 'build',
+			fallback: null,
+			precompress: true
+		})
 	}
 };
