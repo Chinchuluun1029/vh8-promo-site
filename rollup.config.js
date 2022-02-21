@@ -1,9 +1,6 @@
 import svelte from 'rollup-plugin-svelte';
-import {uglify} from 'rollup-plugin-uglify';
-import adapter from '@sveltejs/adapter-static';
 import commonjs from '@rollup/plugin-commonjs';
 import resolve from '@rollup/plugin-node-resolve';
-import livereload from 'rollup-plugin-livereload';
 import { terser } from 'rollup-plugin-terser';
 import css from 'rollup-plugin-css-only';
 
@@ -36,11 +33,7 @@ export default {
 		sourcemap: true,
 		format: 'iife',
 		name: 'app',
-		file: 'public/build/bundle.min.js',
-		plugins: [
-		  svelte(),
-		  uglify()
-		]
+		file: 'public/build/bundle.js',
 	},
 	plugins: [
 		svelte({
@@ -79,12 +72,4 @@ export default {
 	watch: {
 		clearScreen: false
 	},
-	kit: {
-		adapter: adapter({
-			pages: 'build',
-			assets: 'build',
-			fallback: null,
-			precompress: true
-		})
-	}
 };
